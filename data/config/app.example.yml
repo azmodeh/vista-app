@@ -1,0 +1,60 @@
+# Vista VPN Automation System - Configuration File
+# Contract v3.1 Compliant
+
+# Logging Configuration
+logging:
+  level: "info"              # debug, info, warn, error, fatal
+  encoding: "json"           # json or console
+  output_path: "stdout"      # stdout, stderr, or file path
+
+# Database Configuration (PostgreSQL)
+database:
+  dsn: "postgres://user:pass@localhost:5432/vista?sslmode=disable"
+  max_open: 25
+  max_idle: 5
+  max_lifetime: "5m"
+
+# Authentication & JWT Configuration
+auth:
+  jwt_signing_key: ""        # Must be set via JWT_SIGNING_KEY env var
+  token_expiry: "24h"
+  issuer: "vista-vpn-system"
+
+# Network Infrastructure Endpoints
+network:
+  geoip_primary: "http://ipapi.ipspeed.info/json"
+  geoip_fallback: "https://findip.net/json"
+  ping_primary: "http://ir1.node.check-host.net"
+  ping_fallback: "http://ir6.node.check-host.net"
+
+# IPAM (IP Address Management) Configuration
+ipam:
+  # IP Pools - Define CIDR blocks for allocation
+  ip_pools:
+    - cidr: "10.8.0.0/24"
+      node_id: "node-iran-01"
+      is_global: false
+    - cidr: "10.8.1.0/24"
+      node_id: "node-iran-02"
+      is_global: false
+    - cidr: "10.9.0.0/24"
+      node_id: "global-pool"
+      is_global: true
+
+  # Port Ranges - Define port allocation pools
+  port_ranges:
+    - start: 10000
+      end: 10999
+      protocol: "tcp"
+      blacklist: [10022, 10080, 10443]
+    - start: 11000
+      end: 11999
+      protocol: "udp"
+      blacklist: [11194, 11820]
+    - start: 12000
+      end: 12999
+      protocol: "tcp"
+      blacklist: []
+
+  # Lease Duration - Time before 'Reserved' state expires
+  lease_duration: "10m"

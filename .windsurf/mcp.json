@@ -1,0 +1,15 @@
+{
+	"mcpServers": {
+		"task-master-ai": {
+			"command": "npx",
+			"args": ["-y", "task-master-ai"],
+			"env": {
+        "GOOGLE_API_KEY": "AIzaSyCeT4wJV82_K1J3eFNrV0Tb19ulvJRhFH0",
+        "MISTRAL_API_KEY": "DJ4wwxyzLnMus0jvpNuAYcJOEj4sJb2V",
+        "GROQ_API_KEY": "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",
+        "OPENROUTER_API_KEY": "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",
+        "OLLAMA_API_KEY": "http://127.0.0.1:11434/api"
+			}
+		}
+	}
+}

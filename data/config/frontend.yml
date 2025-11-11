@@ -1,0 +1,33 @@
+# Frontend Configuration - Base Settings
+# VPN Automation System - SvelteKit SPA Configuration
+
+# API Configuration
+api:
+  baseURL: "http://localhost:8080"
+  tokenKey: "vpn_auth_token"
+  timeout: 5000
+  retryAttempts: 3
+
+# UI/UX Settings
+ui:
+  theme: "dark"
+  language: "fa"
+  animationDuration: 300
+  globeAnimations: true
+
+# Logging Configuration
+logging:
+  level: "info"
+  enableRemote: false
+  bufferSize: 100
+
+# External Service URLs
+external:
+  geoIPPrimary: "https://ipapi.ipspeed.info"
+  geoIPFallback: "https://findip.net"
+  pingNodePrimary: "ir1.node.check-host.net"
+  pingNodeFallback: "ir6.node.check-host.net"
+
+# Application Metadata
+version: "1.0.0"
+environment: "development"

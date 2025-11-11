@@ -1,0 +1,21 @@
+# Frontend Configuration - Production Overrides
+# VPN Automation System - Production Environment Settings
+
+# API Configuration for Production
+api:
+  baseURL: "https://api.vpnautomation.ir"
+  timeout: 10000
+  retryAttempts: 5
+
+# UI Settings for Production
+ui:
+  animationDuration: 200  # Faster animations for production
+
+# Logging Configuration for Production
+logging:
+  level: "warn"
+  enableRemote: true
+  bufferSize: 500
+
+# Application Metadata
+environment: "production"

@@ -1,0 +1,133 @@
+# Persian UI Text Messages
+# VPN Automation System - Farsi/Persian Localization
+
+# Authentication Module
+auth:
+  login: "ورود"
+  logout: "خروج"
+  username: "نام کاربری"
+  password: "رمز عبور"
+  loginButton: "ورود به سیستم"
+  loginFailed: "ورود ناموفق. لطفاً اطلاعات را بررسی کنید"
+  sessionExpired: "جلسه منقضی شده است"
+  unauthorized: "دسترسی غیرمجاز"
+
+# Dashboard Module
+dashboard:
+  title: "داشبورد"
+  overview: "نمای کلی"
+  activeDevices: "دستگاه‌های فعال"
+  activeTunnels: "تونل‌های فعال"
+  totalBandwidth: "پهنای باند کل"
+  systemHealth: "وضعیت سیستم"
+  lastUpdate: "آخرین بروزرسانی"
+  refreshData: "بروزرسانی اطلاعات"
+
+# Devices Module
+devices:
+  title: "دستگاه‌ها"
+  deviceList: "لیست دستگاه‌ها"
+  deviceDetails: "جزئیات دستگاه"
+  addDevice: "افزودن دستگاه"
+  editDevice: "ویرایش دستگاه"
+  deleteDevice: "حذف دستگاه"
+  deviceName: "نام دستگاه"
+  deviceType: "نوع دستگاه"
+  ipAddress: "آدرس IP"
+  status: "وضعیت"
+  online: "آنلاین"
+  offline: "آفلاین"
+  connecting: "در حال اتصال"
+  lastSeen: "آخرین بازدید"
+  provision: "راه‌اندازی"
+  reprovision: "راه‌اندازی مجدد"
+  cleanup: "پاکسازی"
+
+# Tunnels Module
+tunnels:
+  title: "تونل‌ها"
+  createTunnel: "ایجاد تونل"
+  editTunnel: "ویرایش تونل"
+  deleteTunnel: "حذف تونل"
+  tunnelName: "نام تونل"
+  protocol: "پروتکل"
+  sourceDevice: "دستگاه مبدا"
+  targetDevice: "دستگاه مقصد"
+  bandwidth: "پهنای باند"
+  encryption: "رمزنگاری"
+  wireguard: "WireGuard"
+  hysteria2: "Hysteria2"
+  v2ray: "V2Ray/Reality"
+  l2tp: "L2TP"
+  openvpn: "OpenVPN"
+  ssr: "ShadowsocksR"
+  vless: "VLESS"
+  tunnelBuilder: "ساخت تونل"
+  selectProtocol: "انتخاب پروتکل"
+  configureSettings: "تنظیم پیکربندی"
+  confirmSettings: "تأیید تنظیمات"
+
+# Operations Module
+operations:
+  title: "عملیات"
+  jobHistory: "تاریخچه کارها"
+  logs: "گزارش‌ها"
+  timeline: "جدول زمانی"
+  jobStatus: "وضعیت کار"
+  pending: "در انتظار"
+  running: "در حال اجرا"
+  completed: "تکمیل شده"
+  failed: "ناموفق"
+  cancelled: "لغو شده"
+  startTime: "زمان شروع"
+  endTime: "زمان پایان"
+  duration: "مدت زمان"
+  details: "جزئیات"
+
+# Common UI Elements
+common:
+  save: "ذخیره"
+  cancel: "لغو"
+  delete: "حذف"
+  edit: "ویرایش"
+  add: "افزودن"
+  close: "بستن"
+  confirm: "تأیید"
+  loading: "در حال بارگیری..."
+  search: "جستجو"
+  filter: "فیلتر"
+  sort: "مرتب‌سازی"
+  refresh: "بروزرسانی"
+  settings: "تنظیمات"
+  help: "راهنما"
+  back: "بازگشت"
+  next: "بعدی"
+  previous: "قبلی"
+  submit: "ارسال"
+  reset: "بازنشانی"
+  export: "خروجی"
+  import: "ورودی"
+
+# Error Messages
+errors:
+  network: "خطای شبکه - لطفاً اتصال اینترنت را بررسی کنید"
+  server: "خطای سرور - لطفاً بعداً دوباره تلاش کنید"
+  validation: "اطلاعات وارد شده معتبر نیست"
+  unauthorized: "دسترسی غیرمجاز - لطفاً دوباره وارد شوید"
+  notFound: "صفحه مورد نظر یافت نشد"
+  timeout: "درخواست منقضی شد"
+  unknown: "خطای نامشخص رخ داده است"
+  configLoad: "خطا در بارگیری تنظیمات"
+  deviceUnavailable: "دستگاه در دسترس نیست"
+  tunnelCreationFailed: "ایجاد تونل ناموفق بود"
+
+# Success Messages
+success:
+  saved: "با موفقیت ذخیره شد"
+  deleted: "با موفقیت حذف شد"
+  created: "با موفقیت ایجاد شد"
+  updated: "با موفقیت بروزرسانی شد"
+  connected: "اتصال برقرار شد"
+  disconnected: "اتصال قطع شد"
+  deviceProvisioned: "دستگاه با موفقیت راه‌اندازی شد"
+  tunnelCreated: "تونل با موفقیت ایجاد شد"
